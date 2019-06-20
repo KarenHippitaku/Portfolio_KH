@@ -1,0 +1,42 @@
+html {}
+
+  body {
+    background: url('./images/fondo_longSpace.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height:
+  }
+
+/* This method requires the image linked directly into the HTML file. Con, it covers the text in the body element */
+  /* .bkg { */
+  /* Set rules to fill background */
+  /* min-height: 100%;
+  min-width: 1024px; */
+
+  /* Set up proportionate scaling */
+  /* width: 100%;
+  height: auto; */
+
+  /* Set up positioning */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  } */
+
+  .project {
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .text {
+    font-family: sans-serif;
+  }
+
+  .whiteText {
+    color: #fff;
+  }
