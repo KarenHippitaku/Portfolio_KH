@@ -12,7 +12,7 @@ html {
 /* My colors aqua: 00ffb8 (0 255 184) blue: 009bff (0 155 255) purple: 6a8bff (106 139 255)
 yellow: feff79 (254 255 121) pink: ff058c (255 5 141)
 not-white: f5f6f7 +3not white: dfe3e6
-not-black: 0e0e2d -1not-black: 2d2d3c -2not-black: 3c3c4b*/
+not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
 
 /* The perfec image coverage, so they say xD  but I wanted to start from the top*/
   body {
@@ -39,6 +39,23 @@ not-black: 0e0e2d -1not-black: 2d2d3c -2not-black: 3c3c4b*/
   top: 0;
   left: 0;
   } */
+  .about {
+    display: block;
+    justify-content: center;
+  }
+  .picture {
+    display: inline-block;
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 50%;
+    background: url('./images/profile_pic.jpg') no-repeat;
+    background-size: 100%;
+
+  }
+  .picture:hover {
+    background: url('./images/profile_pic_hover.jpg') no-repeat;
+    background-size: 100%;
+  }
 
   .sampleImg {
     max-width: 15rem;
@@ -48,7 +65,7 @@ not-black: 0e0e2d -1not-black: 2d2d3c -2not-black: 3c3c4b*/
   section {
     display: block;
     justify-content: center;
-    height: 50rem;
+    min-height: 50rem;
 
   }
   .block {
@@ -58,11 +75,18 @@ not-black: 0e0e2d -1not-black: 2d2d3c -2not-black: 3c3c4b*/
   .container {
     display: flex;
     flex-flow: column;
-    min-height: 8rem;
+    /* min-height: 8rem; */
     position: relative;
-    background-color: #0e0e14;
+    background-color: #19191e;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 2rem;
+    padding-top: 1rem;
   }
 
+  .smallContainer {
+  }
 
   .project {
     display: flex;
@@ -72,13 +96,17 @@ not-black: 0e0e2d -1not-black: 2d2d3c -2not-black: 3c3c4b*/
     margin: 1rem;
   }
 
-  .bkContainer {
-    align-items: center;
-    /* background-color: #0e0e14; */
+
+  .title {
     width: auto;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .paragraph {
+    width: 20vw;
     height: auto;
-    margin: 2rem;
-    padding-top: 1rem;
   }
 
   a {
@@ -108,6 +136,7 @@ not-black: 0e0e2d -1not-black: 2d2d3c -2not-black: 3c3c4b*/
     margin-inline-end: 0px;
     font-weight: bold;
   }
+
 
   .headText {
     display: block;
@@ -159,3 +188,6 @@ not-black: 0e0e2d -1not-black: 2d2d3c -2not-black: 3c3c4b*/
   .ctNoTextzone:after {
     content: none;
   } */
+  @media screen (orientation:portrait max-width: 480px) {
+
+  }
