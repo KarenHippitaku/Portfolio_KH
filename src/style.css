@@ -1,12 +1,27 @@
-html {}
+html {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
+  /* height: 100%; */
 
+}
+
+/* My colors aqua: 00ffb8 (0 255 184) blue: 009bff (0 155 255) purple: 6a8bff (106 139 255)
+yellow: feff79 (254 255 121) pink: ff058c (255 5 141)
+not-white: f5f6f7 +3not white: dfe3e6
+not-black: 0e0e2d -1not-black: 2d2d3c -2not-black: 3c3c4b*/
+
+/* The perfec image coverage, so they say xD  but I wanted to start from the top*/
   body {
-    background: url('./images/fondo_longSpace.png') no-repeat center center fixed;
+    background: url('./images/fondo_longSpace.png') no-repeat top center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    min-height:
+    background-size: 100% cover;
+    background-color: #0e0e14;
   }
 
 /* This method requires the image linked directly into the HTML file. Con, it covers the text in the body element */
@@ -25,18 +40,122 @@ html {}
   left: 0;
   } */
 
+  .sampleImg {
+    max-width: 15rem;
+    height: auto;
+  }
+
+  section {
+    display: block;
+    justify-content: center;
+    height: 50rem;
+
+  }
+  .block {
+    margin: 0.5rem 1rem 0.5rem 1rem ;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: column;
+    min-height: 8rem;
+    position: relative;
+    background-color: #0e0e14;
+  }
+
+
   .project {
     display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    height: auto;
+    margin: 1rem;
+  }
+
+  .bkContainer {
+    align-items: center;
+    /* background-color: #0e0e14; */
+    width: auto;
+    height: auto;
+    margin: 2rem;
+    padding-top: 1rem;
   }
 
   a {
     text-decoration: none;
+    color: #f5f6f7;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #00ffb8;
   }
 
   .text {
     font-family: sans-serif;
+    text-align: center;
   }
 
   .whiteText {
+    color: #f5f6f7;
+  }
+
+  h1 {
+    font-size: 8em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  .headText {
+    display: block;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-transform: uppercase;
+
+  }
+  .footText {
+    color: #dfe3e6;
+    font-size: 2rem;
+  }
+
+  .clipText {
+    /* @include ctNoTextzone('background: url('./images/spaceW01.jpg') 'bkContainer'); */
+  }
+    /* if we can clip, do it */
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    /* -webkit-mix-blend-mode: multiply;
+    -moz-mix-blend-mode: multiply;
+    -o-mix-blend-mode: multiply; */
+
+    /* what will show through the text
+    ~ or ~
+    what will be the background of that element */
+    /* background: url('./images/spaceW01.jpg'); */
+
+    /* fallback text color
+    ~ or ~
+    the actual color of text, so it better work on the background */
+    /* color: #fff; */
+  }
+
+  /* .clipText {
     color: #fff;
   }
+  .ctNoTextzone {} */
+
+    /* Change the background position to display letter when the black zone isn't here */
+  /* .ctNoTextzone:before {
+    background-position: -.75em 0;
+  }
+
+  .ctNoTextzone:after {
+    content: none;
+  } */
