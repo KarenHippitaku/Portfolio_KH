@@ -17,6 +17,7 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
 /* The perfec image coverage, so they say xD  but I wanted to start from the top*/
   body {
     background: url('./images/fondo_longSpace.png') no-repeat top center scroll;
+    /* background: url('https://drive.google.com/uc?export=view&id=1wioFDc2X1ccXvFgt-T48YxcWATYEbeTA') no-repeat top center scroll; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -48,12 +49,12 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     max-width: 20rem;
     max-height: 20rem;
     border-radius: 50%;
-    background: url('./images/profile_pic.jpg') no-repeat;
+    background: url('https://drive.google.com/uc?export=view&id=16VON5YNSrvM-Zxnhi14q-NvR3aZ9ePpY') no-repeat;
     background-size: 100%;
 
   }
   .picture:hover {
-    background: url('./images/profile_pic_hover.jpg') no-repeat;
+    background: url('https://drive.google.com/uc?export=view&id=1nDNhYlN9obmPcuPjLLmPrJlFCAJV9SGo') no-repeat;
     background-size: 100%;
   }
 
@@ -188,6 +189,6 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
   .ctNoTextzone:after {
     content: none;
   } */
-  @media screen (orientation:portrait max-width: 480px) {
+  @media screen (orientation:portrait, max-width: 480px) {
 
   }
