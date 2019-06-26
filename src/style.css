@@ -138,6 +138,24 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     font-weight: bold;
   }
 
+  #goUpBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2rem; /* Place the button at the bottom of the page */
+    right: 2rem; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #6a8bff; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1rem; /* Some padding */
+    border-radius: .5rem; /* Rounded corners */
+    font-size: 1.5rem; /* Increase font size */
+    height: 3.2rem; /*optic square*/
+    width: 3rem;
+  }
+
 
   .headText {
     display: block;
