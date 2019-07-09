@@ -173,40 +173,46 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     font-size: 2rem;
   }
 
-  .clipText {
-    /* @include ctNoTextzone('background: url('./images/spaceW01.jpg') 'bkContainer'); */
-  }
-    /* if we can clip, do it */
-    /* -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; */
-    /* -webkit-mix-blend-mode: multiply;
-    -moz-mix-blend-mode: multiply;
-    -o-mix-blend-mode: multiply; */
-
-    /* what will show through the text
-    ~ or ~
-    what will be the background of that element */
-    /* background: url('./images/spaceW01.jpg'); */
-
-    /* fallback text color
-    ~ or ~
-    the actual color of text, so it better work on the background */
-    /* color: #fff; */
+  form {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    background-color: #19191e;
+    align-items: center;
+    width: 30rem;
+    height: auto;
+    padding: 1rem;
+    margin: 5rem;
   }
 
-  /* .clipText {
-    color: #fff;
-  }
-  .ctNoTextzone {} */
-
-    /* Change the background position to display letter when the black zone isn't here */
-  /* .ctNoTextzone:before {
-    background-position: -.75em 0;
+  input {
+    background: #3c3c4b;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.1rem;
   }
 
-  .ctNoTextzone:after {
-    content: none;
-  } */
+  input[type=submit] {
+    background: #ff058c;
+    height: 2rem;
+    margin: 1rem;
+  }
+
+  input[type=text] {
+    width: 20rem;
+  }
+
+  .inputMessage {
+    height: 8rem;
+  }
+
+  textarea {
+    background: #3c3c4b;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.1rem;
+  }
+
   @media screen (orientation:portrait, max-width: 480px) {
 
   }
