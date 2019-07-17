@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   display: flex;
-  flex-flow: column;
+  /* flex-flow: column; */
   justify-content: center;
   /* margin-left: 2rem;
   margin-right: 2rem; */
@@ -16,7 +16,7 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
 
 /* The perfec image coverage, so they say xD  but I wanted to start from the top*/
   body {
-    background: url('./images/fondo_longSpace.png') no-repeat top center scroll;
+    background: url('./images/fondo_longSpace_mobile.png') no-repeat top center scroll;
     /* background: url('https://drive.google.com/uc?export=view&id=1wioFDc2X1ccXvFgt-T48YxcWATYEbeTA') no-repeat top center scroll; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -25,57 +25,21 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     background-color: #0e0e14;
   }
 
-/* This method requires the image linked directly into the HTML file. Con, it covers the text in the body element */
-  /* .bkg { */
-  /* Set rules to fill background */
-  /* min-height: 100%;
-  min-width: 1024px; */
-
-  /* Set up proportionate scaling */
-  /* width: 100%;
-  height: auto; */
-
-  /* Set up positioning */
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  } */
-  .about {
-    display: block;
-    justify-content: center;
-  }
-  .picture {
-    display: inline-block;
-    max-width: 20rem;
-    max-height: 20rem;
-    border-radius: 50%;
-    background: url('https://drive.google.com/uc?export=view&id=16VON5YNSrvM-Zxnhi14q-NvR3aZ9ePpY') no-repeat;
-    background-size: 100%;
-
-  }
-  .picture:hover {
-    background: url('https://drive.google.com/uc?export=view&id=1nDNhYlN9obmPcuPjLLmPrJlFCAJV9SGo') no-repeat;
-    background-size: 100%;
-  }
-
-  .sampleImg {
-    max-width: 15rem;
-    height: auto;
-  }
 
   section {
     display: block;
     justify-content: center;
     min-height: 50rem;
-
   }
   .block {
     margin: 0.5rem 1rem 0.5rem 1rem ;
+    display: flex;
+    flex-flow: wrap;
   }
 
   .container {
     display: flex;
-    flex-flow: column;
+    /* flex-flow: column; */
     /* min-height: 8rem; */
     position: relative;
     background-color: #19191e;
@@ -86,8 +50,73 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     padding-top: 1rem;
   }
 
-  .smallContainer {
+  .text {
+    font-family: sans-serif;
+    text-align: center;
   }
+  .whiteText {
+    color: #f5f6f7;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .headText {
+    display: block;
+    background-color: #19191e;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    /* left: 10%; */
+    -ms-transform: translateY(-10%);
+    transform: translateY(-10%);
+    text-transform: uppercase;
+  }
+  .footText {
+    color: #dfe3e6;
+    font-size: 0.8rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .picture {
+    display: flex;
+    float: left;
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 50%;
+    background: url('https://drive.google.com/uc?export=view&id=16VON5YNSrvM-Zxnhi14q-NvR3aZ9ePpY') no-repeat;
+    background-size: 100%;
+    margin: 1rem;
+  }
+  .picture:hover {
+    background: url('https://drive.google.com/uc?export=view&id=1nDNhYlN9obmPcuPjLLmPrJlFCAJV9SGo') no-repeat;
+    background-size: 100%;
+    margin: 1rem;
+  }
+
+  .sampleImg {
+    max-width: 15rem;
+    height: auto;
+  }
+
+  .about {
+    float: left;
+    justify-content: center;
+  }
+
+  .tetris {
+    flex-flow: wrap;
+    flex: 1 1 auto;
+    max-width: 20rem;
+  }
+
+
+  /* .smallContainer {
+  } */
 
   .project {
     display: flex;
@@ -96,7 +125,6 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     height: auto;
     margin: 1rem;
   }
-
 
   .title {
     width: auto;
@@ -120,23 +148,14 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     color: #00ffb8;
   }
 
-  .text {
-    font-family: sans-serif;
-    text-align: center;
-  }
-
-  .whiteText {
-    color: #f5f6f7;
-  }
-
-  h1 {
+  /* h1 {
     font-size: 8em;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-  }
+  } */
 
   #goUpBtn {
     display: none; /* Hidden by default */
@@ -144,10 +163,10 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     bottom: 2rem; /* Place the button at the bottom of the page */
     right: 2rem; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
+    border: 0.2rem solid #ff058c ; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #6a8bff; /* Set a background color */
-    color: white; /* Text color */
+    background-color: #19191e; /* Set a background color */
+    color: #ff058c; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 1rem; /* Some padding */
     border-radius: .5rem; /* Rounded corners */
@@ -156,63 +175,137 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     width: 3rem;
   }
 
-
-  .headText {
-    display: block;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    /* left: 50%; */
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-transform: uppercase;
-
-  }
-  .footText {
-    color: #dfe3e6;
-    font-size: 2rem;
-  }
-
   form {
     display: flex;
     flex-flow: column;
     position: relative;
     background-color: #19191e;
     align-items: center;
-    width: 30rem;
-    height: auto;
-    padding: 1rem;
-    margin: 5rem;
+    max-width: 25rem;
+    height: 26rem;
+    padding: 2rem;
+    margin: 3rem;
   }
 
   input {
     background: #3c3c4b;
     border: none;
     border-radius: 0.5rem;
-    margin: 0.1rem;
+    margin: 0.3rem;
+    font-size: 1.3rem;
   }
 
   input[type=submit] {
     background: #ff058c;
-    height: 2rem;
+    height: 3rem;
+    width: 5rem;
+    padding: auto;
     margin: 1rem;
   }
-
   input[type=text] {
     width: 20rem;
   }
-
-  .inputMessage {
-    height: 8rem;
-  }
-
   textarea {
     background: #3c3c4b;
     border: none;
     border-radius: 0.5rem;
-    margin: 0.1rem;
+    margin: 0.3rem;
+    height: 8rem;
+    font-size: 1rem;
   }
 
-  @media screen (orientation:portrait, max-width: 480px) {
+/* portrait tablet */
+  @media screen and (min-width: 500px) {
+    body {
+      /* background-color: blue; */
+      background: url('./images/fondo_longSpace_tablet.png') no-repeat top center scroll;
+      /* background: url('https://drive.google.com/uc?export=view&id=1wioFDc2X1ccXvFgt-T48YxcWATYEbeTA') no-repeat top center scroll; */
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: 100% cover;
+      /* background-color: #0e0e14; */
+    }
+
+    .footText {
+      /* color: #dfe3e6; */
+      font-size: 1.5rem;
+    }
+
+/* landscape tablet */
+  @media screen and (min-width: 700px) {
+
+    .headText {
+      /* display: block;
+      justify-content: center;
+      position: absolute; */
+      top: 20%;
+      /* left: 50%; */
+      -ms-transform: translateY(-20%);
+      transform: translateY(-20%);
+      /* text-transform: uppercase; */
+
+    }
+    .footText {
+      /* color: #dfe3e6; */
+      font-size: 2rem;
+    }
+
+/* Big tablets and deskopt */
+    @media screen and (min-width: 800px) {
+    body {
+      /* background-color: blue; */
+      background: url('./images/fondo_longSpace.png') no-repeat top center scroll;
+      /* background: url('https://drive.google.com/uc?export=view&id=1wioFDc2X1ccXvFgt-T48YxcWATYEbeTA') no-repeat top center scroll; */
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: 100% cover;
+      /* background-color: #0e0e14; */
+    }
+
+    .headText {
+      /* display: block;
+      justify-content: center;
+      position: absolute; */
+      top: 50%;
+      /* left: 50%; */
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      /* text-transform: uppercase; */
+
+    }
+    .footText {
+      /* color: #dfe3e6; */
+      font-size: 2.5rem;
+    }
+
+    form {
+      width: 30rem;
+      height: 30rem;
+      /* padding: 1rem; */
+      margin: 3rem;
+    }
+
+    input {
+      margin: 0.3rem;
+      font-size: 1.1rem;
+    }
+
+    input[type=submit] {
+      height: 2.2rem;
+      width: 4rem;
+      /* padding: auto; */
+      margin: 1rem;
+    }
+
+    input[type=text] {
+      width: 20rem;
+    }
+    textarea {
+      margin: 0.3rem;
+      height: 12rem;
+      font-size: 1rem;
+    }
 
   }
