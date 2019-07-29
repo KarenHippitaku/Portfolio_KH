@@ -5,11 +5,11 @@ html {
 /* My colors aqua: 00ffb8 (0 255 184) blue: 009bff (0 155 255) purple: 6a8bff (106 139 255)
 yellow: feff79 (254 255 121) pink: ff058c (255 5 141)
 not-white: f5f6f7 +3not white: dfe3e6
-not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
+not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3not-black: 3c3c4b*/
 
-/* The perfec image coverage, so they say xD  but I wanted to start from the top*/
   body {
-    background: url('./images/fondo_longSpace_mobile.png') no-repeat top center scroll;
+    /* The perfec image coverage, so they say xD  but I wanted to start from the top*/
+    /* background: url('./images/fondo_longSpace_mobile.png') no-repeat top center scroll; */
     /* background: url('https://drive.google.com/uc?export=view&id=1wioFDc2X1ccXvFgt-T48YxcWATYEbeTA') no-repeat top center scroll; */
     background-color: #0e0e14;
     -webkit-background-size: cover;
@@ -52,7 +52,48 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     margin: 2rem;
     /* padding-top: 1rem; */
   }
-
+  .aqua:hover {
+    background-color: #00ffb8;
+  }
+  .blue:hover {
+    background-color: #009bff;
+  }
+  .purple:hover {
+    background-color: #6a8bff;
+  }
+  .purple1:hover {
+    background-color: #925EFF;
+  }
+  .purple2:hover {
+    background-color: #5D56E8;
+  }
+  .purple3:hover {
+    background-color: #569CE8;
+  }
+  .purple4:hover {
+    background-color: #5ED6FF;
+  }
+  .pink:hover {
+    background-color: #ff058c;
+  }
+  .pink1:hover {
+    background-color: #FF2A42;
+  }
+  .pink2:hover {
+    background-color: #EB0953;
+  }
+  .pink3:hover {
+    background-color: #E807AE;
+  }
+  .pink4:hover {
+    background-color: #FF08F3;
+  }
+  .yellow:hover {
+    background-color: #feff79;
+  }
+  .bkText:hover {
+    color: #19191e;
+  }
   .about {
     float: left;
     justify-content: center;
@@ -208,7 +249,6 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
 /* portrait tablet */
   @media screen and (min-width: 500px) {
     body {
-      /* background-color: blue; */
       /* background: url('./images/fondo_longSpace_tablet.png') no-repeat top center scroll; */
       background-color: #0e0e14;
       -webkit-background-size: cover;
@@ -228,7 +268,6 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
       top: 20%;
       -ms-transform: translateY(-20%);
       transform: translateY(-20%);
-
     }
     .footText {
       font-size: 2rem;
@@ -237,8 +276,7 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
 /* Big tablets and deskopt */
     @media screen and (min-width: 800px) {
     body {
-      /* background-color: blue; */
-      background: url('./images/fondo_longSpace.png') no-repeat top center scroll;
+      /* background: url('./images/fondo_longSpace.png') no-repeat top center scroll; */
       /* background: url('https://drive.google.com/uc?export=view&id=1wioFDc2X1ccXvFgt-T48YxcWATYEbeTA') no-repeat top center scroll; */
       background-color: #0e0e14;
       -webkit-background-size: cover;
@@ -248,15 +286,10 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
     }
 
     .headText {
-      /* display: block;
-      justify-content: center;
-      position: absolute; */
       top: 50%;
       /* left: 50%; */
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      /* text-transform: uppercase; */
-
     }
     .footText {
       /* color: #dfe3e6; */
@@ -278,19 +311,16 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not-black: 2d2d2d -2not-black: 3c3c4b*/
       height: 30rem;
       margin: 3rem;
     }
-
     input {
       width: 25rem;
       /* margin: 0.5rem; */
       font-size: 1.1rem;
     }
-
     input[type=submit] {
       height: 2.2rem;
       width: 4rem;
       margin: 1rem;
     }
-
     textarea {
       /* margin: 0.5rem; */
       width: 25rem;
