@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-625rem 312.5rem;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-625rem 312.5rem;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-625rem 312.5rem;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-625rem 312.5rem;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:625rem 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:625rem 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:625rem 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:625rem 0;}
+}
+
+.stars, .twinkling, .clouds {
+  /* background: scroll; */
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:auto;
+  size: cover;
+  display:block;
+}
+.stars {
+  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png)
+  repeat center center scroll;
+  z-index:-2;
+}
+.twinkling{
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png)
+  repeat center center scroll;
+  z-index:-1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+.clouds{
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png)
+    no-repeat bottom center scroll;
+    z-index:0;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
