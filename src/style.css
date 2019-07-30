@@ -12,10 +12,10 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
     /* background: url('./images/fondo_longSpace_mobile.png') no-repeat top center scroll; */
     /* background: url('https://drive.google.com/uc?export=view&id=1wioFDc2X1ccXvFgt-T48YxcWATYEbeTA') no-repeat top center scroll; */
     background-color: #0e0e14;
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 100% cover;
+    background-size: 100% cover; */
   }
 
   footer {
@@ -42,7 +42,8 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
   .container {
     display: flex;
     /* text-align: center; */
-    /* flex-flow: column; */
+    flex-flow: column;
+    justify-content: center;
     /* min-height: 8rem; */
     /* position: relative; */
     background-color: #19191e;
