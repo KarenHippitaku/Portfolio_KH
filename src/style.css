@@ -39,9 +39,9 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
     display: flex;
     flex-flow: wrap;
   }
-
   .container {
     display: flex;
+    /* text-align: center; */
     /* flex-flow: column; */
     /* min-height: 8rem; */
     /* position: relative; */
@@ -51,6 +51,17 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
     /* height: auto; */
     margin: 2rem;
     /* padding-top: 1rem; */
+  }
+  .about {
+    float: left;
+    justify-content: center;
+  }
+  .text {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .whiteText {
+    color: #f5f6f7;
   }
   .aqua:hover {
     background-color: #00ffb8;
@@ -94,22 +105,41 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
   .bkText:hover {
     color: #19191e;
   }
-  .about {
-    float: left;
-    justify-content: center;
+  .project {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    height: auto;
+    margin: 1rem;
   }
-
-  .text {
-    font-family: sans-serif;
-    text-align: center;
+  h2 {
+    font-size: 1.4rem;
   }
-  .whiteText {
-    color: #f5f6f7;
+  h3 {
+    font-size: 1rem;
   }
-  h4 {
-    font-size: 2rem;
+  .title {
+    width: auto;
+    /* height: 1.5rem; */
+    weight: bold;
+    padding: 1.5rem 1rem 1rem;
+    margin: 0rem 0.5rem;
   }
-
+  .paragraph {
+    white-space: wrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    word-spacing: 0.1rem;
+    width: 25rem;
+    height: auto;
+    padding: 0.5rem 1rem 1rem;
+    margin: 0.5rem 1rem;
+  }
+  .list {
+    width: 12rem;
+    white-space: pre-line;
+  }
   .headText {
     display: block;
     background-color: #19191e;
@@ -155,25 +185,6 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
     flex-flow: wrap;
     flex: 1 1 auto;
     max-width: 20rem;
-  }
-
-  .project {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    height: auto;
-    margin: 1rem;
-  }
-
-  .title {
-    width: auto;
-    height: 3rem;
-    font-size: 2rem;
-    padding: 1rem;
-  }
-  .paragraph {
-    width: 20vw;
-    height: auto;
   }
 
   a {
@@ -256,7 +267,12 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
       -o-background-size: cover;
       background-size: 100% cover;
     }
-
+    h2 {
+      font-size: 1.6rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+    }
     .footText {
       font-size: 1.5rem;
     }
@@ -284,7 +300,12 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
       -o-background-size: cover;
       background-size: 100% cover;
     }
-
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
     .headText {
       top: 50%;
       /* left: 50%; */
