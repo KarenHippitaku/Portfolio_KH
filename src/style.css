@@ -23,6 +23,7 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
     justify-content: center;
     margin-bottom: 4rem;
   }
+  svg,
   img.iconLink {
     display: block;
     padding: 0;
