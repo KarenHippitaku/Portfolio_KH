@@ -65,7 +65,7 @@
   -webkit-animation:move-twink-back 200s linear infinite;
   animation:move-twink-back 200s linear infinite;
 }
-.clouds{
+/* .clouds{
     background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png)
     no-repeat bottom center scroll;
     z-index:0;
@@ -75,4 +75,4 @@
   -o-animation:move-clouds-back 200s linear infinite;
   -webkit-animation:move-clouds-back 200s linear infinite;
   animation:move-clouds-back 200s linear infinite;
-}
+} */
