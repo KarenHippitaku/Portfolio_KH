@@ -218,8 +218,8 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
     cursor: pointer; /* Add a mouse pointer on hover */
     border-radius: .5rem; /* Rounded corners */
     /* font-size: 1.5rem; /* Increase font size */
-    height: 4.5rem; /*optic square*/
-    width: 4rem;
+    height: 6.5rem; /*optic square*/
+    width: 6rem;
     align-items: flex-start;
     margin: 0rem;
     padding: 0.5rem;
@@ -332,7 +332,6 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
       height: 100%;
     }
     #update{
-      grid-area: 3/3/4/5;
       margin: 0;
       padding: 0.5rem 0 0 0;
     }
