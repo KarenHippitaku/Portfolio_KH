@@ -1,5 +1,6 @@
-html {
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* My colors aqua: 00ffb8 (0 255 184) blue: 009bff (0 155 255) purple: 6a8bff (106 139 255)
@@ -19,27 +20,27 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
   }
 
   section {
-    /* display: block; */
-    justify-content: center;
+    display: block;
     min-height: 50rem;
   }
   .block {
-    margin: 0.5rem 1rem 0.5rem 1rem ;
-    display: flex;
-    flex-flow: wrap;
+    display: grid;
+    /* margin: 0.5rem 1rem 0.5rem 1rem ; */
+    /* display: flex;
+    flex-flow: wrap; */
   }
   .container {
-    display: flex;
+    /* display: flex; */
     /* text-align: center; */
-    flex-flow: column;
-    justify-content: center;
+    /* flex-flow: column;
+    justify-content: center; */
     /* min-height: 8rem; */
     /* position: relative; */
     background-color: #19191e;
     align-items: center;
     /* width: auto; */
     /* height: auto; */
-    margin: 2rem;
+    /* margin: 2rem; */
     /* padding-top: 1rem; */
   }
   .about {
@@ -131,24 +132,28 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
     white-space: pre-line;
   }
   .headText {
-    display: block;
+    /* display: block; */
     background-color: #19191e;
-    /* justify-content: center; */
     padding: 1rem 0 1rem 0;
-    position: absolute;
+    /* position: absolute;
     top: 10%;
     right: 1%;
     -o-transform: translateY(-10%);
     -ms-transform: translateY(-10%);
-    transform: translateY(-10%);
+    transform: translateY(-10%); */
     text-transform: uppercase;
+    grid-area: 2/2/5/17;
+  }
+  .landingBlock {
   }
   .footText {
     color: #dfe3e6;
     font-size: 0.8rem;
+    grid-area: 5/2/6/17;
   }
   .coverImg {
-    width: 100%;
+    width: auto;
+    grid-area: 2/2/5/17;
   }
   .picture {
     display: flex;
@@ -265,8 +270,12 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
     font-size: 1rem;
   }
 
-/* portrait tablet */
-  @media screen and (min-width: 500px) {
+/* Small phones */
+  @media screen and (max-width: 375px) and (min-width: 321px) {
+  }
+
+/* Medium portrait tablet or large phone*/
+  @media screen and (max-width: 425px) and (min-width: 376px) {
     body {
       /* background: url('./images/fondo_longSpace_tablet.png') no-repeat top center scroll; */
       background-color: #0e0e14;
@@ -285,9 +294,8 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
       font-size: 1.5rem;
     }
 
-/* landscape tablet */
-  @media screen and (min-width: 700px) {
-
+/* Medium landscape tablet or large portrait */
+  @media screen and (max-width: 768px) and (min-width: 426px) {
     .headText {
       top: 20%;
       -ms-transform: translateY(-20%);
@@ -297,8 +305,8 @@ not-black: 0e0e14 -0e0e2d(muy azul) -1not black: 19191e -2not-black: 2d2d2d -3no
       font-size: 2rem;
     }
 
-/* Big tablets and deskopt */
-    @media screen and (min-width: 800px) {
+/* Large tablets, laptops and deskopt */
+    @media screen and (max-width: 1024px) and (min-width: 769px) {
     body {
       /* background: url('./images/fondo_longSpace.png') no-repeat top center scroll; */
       /* background: url('https://drive.google.com/uc?export=view&id=1wioFDc2X1ccXvFgt-T48YxcWATYEbeTA') no-repeat top center scroll; */
