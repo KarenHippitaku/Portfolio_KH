@@ -21,13 +21,14 @@ body {
 
   section {
     /* display: block; */
-    justify-content: center;
+    /* justify-content: center; */
     min-height: 50rem;
+    min-height: 15rem;
   }
   .block {
     margin: 0.5rem 1rem 0.5rem 1rem ;
-    display: flex;
-    flex-flow: wrap;
+    /* display: flex;
+    flex-flow: wrap; */
   }
   .container {
     display: flex;
@@ -41,6 +42,7 @@ body {
     /* width: auto; */
     /* height: auto; */
     margin: 2rem;
+    margin: 0.5rem;
     /* padding-top: 1rem; */
   }
   .about {
@@ -143,6 +145,7 @@ body {
     -ms-transform: translateY(-10%);
     transform: translateY(-10%); */
     text-transform: uppercase;
+    width: 100%
   }
   .footText {
     color: #dfe3e6;
@@ -182,7 +185,7 @@ body {
     /* display: flex;
     justify-content: center; */
     display: grid;
-    grid-template-columns: 30% 10% 10% 10% 10% 30%;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
     grid-template-rows: 50% 10% 40%;
     height: 6rem;
     margin-bottom: 4rem;
@@ -211,7 +214,9 @@ body {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 2rem; /* Place the button at the bottom of the page */
+    bottom: 1rem;
     right: 2rem; /* Place the button 30px from the right */
+    right: 6rem;
     z-index: 99; /* Make sure it does not overlap */
     border: 0.4rem solid #ff058c;
     background-color: #19191e; /* Set a background color */
@@ -221,7 +226,7 @@ body {
     /* font-size: 1.5rem; /* Increase font size */
     height: 4.5rem; /*optic square*/
     width: 4rem;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     margin: 0rem;
     padding: 0.5rem;
   }
@@ -289,10 +294,8 @@ body {
 /* landscape tablet */
   @media screen and (min-width: 700px) {
 
-    .headText {
-      top: 20%;
-      -ms-transform: translateY(-20%);
-      transform: translateY(-20%);
+    section {
+      min-height: 25rem;
     }
     .footText {
       font-size: 2rem;
@@ -314,6 +317,9 @@ body {
     }
     h3 {
       font-size: 1.6rem;
+    }
+    section {
+      min-height: 50rem;
     }
     .headText {
       top: 50%;
