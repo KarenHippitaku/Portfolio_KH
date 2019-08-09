@@ -38,16 +38,15 @@
 }
 
 .stars, .twinkling, .clouds {
-  /* background: scroll; */
-  position: absolute;
+  position: fixed;
   top:0;
   left:0;
   right:0;
   bottom:0;
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
   size: cover;
-  display:block;
+  display: block;
 }
 .stars {
   background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png)
