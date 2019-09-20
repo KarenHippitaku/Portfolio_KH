@@ -1,0 +1,87 @@
+{
+  "karen":
+  {
+    "es": {
+      "about-me": [{
+        "bio": "Soy una persona creativa que busca
+          a través de la tecnología
+          la creación de soluciones que impacten
+          en las problemáticas de mi país y el mundo.",
+        "tech": "Javascript ES6
+          CSS3
+          HTML5
+          TDD, Jest
+          Node.js
+          Git & Github
+          React Js
+          React native
+          Firebase
+          API’s
+          Adobe suite",
+        "soft": "Pensamiento creativo
+          Resolución de problemas
+          Adaptabilidad al cambio
+          Comunicación efectiva
+          Trabajo colaborativo
+          Autoaprendizaje
+          Liderazgo",
+        "extra": "Soy ciclista y entusiasta de la comida (●´ω｀●)"
+        }],
+        "projects": [{
+          "seguritas": [{
+            "description": "Injuries data and statistics consulting web app.",
+            "tools": "Javascript
+              CSS3
+              JSON database",
+            "achievements": "Through this project I began my understanding of tests,
+              data management and collaborative work with git and github.",
+            "team": "Angélica Caballero",
+          }],
+          "cognita": [{
+            "description": "Web app educativa para niños, sobre mujeres profesionistas a través de la historia.",
+            "tools": "Javascript, CSS, JSON database, Alexa skills and React JS.",
+            "achievements": "Este proyecto se trabajó en dos hackatones diferentes: la primera en Ciudad de
+              México, donde se creó el concepto y la estructura base de la plataforma. La segunda durante
+              Talent land en Guadalajara, donde se complementó el aspecto interactivo a través de la
+              implementasión de Alexa y tajetas de juego. ",
+            "team": "Andre Díaz
+              Nancy Rodríguez
+              Karla Valenzuela
+              Alex Áviles
+              Cristal Cabrera",
+          }],
+          "burger-queen": [{
+            "description": "Order taking app for restaurants (digital menu).",
+            "tools": "React JS
+              CSS3
+              Bootstrap
+              JSON database",
+            "achievements": "Understanding of React JS and design focus for a real product.",
+            "team": "",
+            }],
+          "organa": [{
+            "description": "Attendance registration web app through QR scanning.",
+            "tools": " Javascript, CSS y Firebase.",
+            "achievements": "Team leader, UI/UX designer and execution of the agile manifesto for
+              time management improvement.",
+            "team": "Alex Áviles
+              Mara Estrella
+              Rocío Chavoya",
+          }],
+          "md-links": [{
+            "description": "Node executable library to find and validate links on Markdown format files.",
+            "tools": "Javascript and Node.js.",
+            "achievements": "TDD improvement, development of UX without standar graphic user interface,
+            first back-end experience and Reg-exp familiaritazion.",
+            "team": "",
+          }],
+          "pre-sketcher": [{
+            "description": "Mobile game for fine motor skills development.",
+            "tools": "React Native and CSS3.",
+            "achievements": "Exciting results in the UX research for games and graphic pad users and
+              first steps into product development.",
+            "team": "",
+            }]
+          }]
+      }
+    }}
